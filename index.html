@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" href="index.css" rel="stylesheet">
+   
+    <title>Desafio CEP</title>
+
+
+</head>
+<div class="container-fluid">
+<body>
+
+<div class="jumbotron">
+        <h1 style="color: brown", align="center">CONSULTAR CEP</h1>
+</div>
+
+<br>
+<br>
+    <form data-js="form-cep" align="center" id="procurar">
+        <div class="input-group mb-3">
+        <input data-js="input-cep" id="buscaCep"  type="text" size="35" placeholder="Digite um CEP valido"  class="form-control">
+        <button data-js="submit" id="enviar" type="submit" class="btn btn-primary">Buscar CEP  
+        </button>
+        </div>
+    </form>
+        <br>
+        <div id = "status" style="color: green" align="center">
+            <h2  data-js="status"></h2>
+        </div>
+        <br>
+        <form id="form">
+       <label> <b>LOGRADOURO:</b></label>
+       <div class="input-group mb-3">
+            <input data-js="logradouro"  id="Logradouro1"   class="form-control"disabled>
+        </div>
+        <label> <b>BAIRRO:</b></label>
+        <div class="input-group mb-3">
+                <input data-js="bairro"  id="bairro1" class="form-control" disabled>
+         </div>
+        <label> <b>ESTADO:</b></label>
+        <div class="input-group mb-3">
+                <input data-js="estado"  id="estado1" class="form-control" disabled>
+         </div>
+        <label> <b>CIDADE:</b></label>
+        <div class="input-group mb-3">
+                <input data-js="cidade"  id="cidade1" class="form-control" disabled>
+         </div>
+        <label> <b>CEP:</b></label>
+        <div class="input-group mb-3">
+                <input data-js="cep"  id="cep1" class="form-control" disabled>
+         </div>
+    </form>
+    
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</div>
+</html>
